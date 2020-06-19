@@ -10,15 +10,15 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.statemachine.demo.dao.ProductRepository;
 import com.statemachine.demo.model.Product;
+import com.statemachine.demo.service.impl.ProductServiceImpl;
 import com.statemachine.demo.util.Events;
 import com.statemachine.demo.util.States;
-import com.statemachine.service.ProductService;
 
 @SpringBootTest
 public class ProductServiceImplTest {
 	
 	@Autowired
-	ProductService productService;
+	ProductServiceImpl productService;
 	
 	@Autowired
 	ProductRepository productRepository;

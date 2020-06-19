@@ -1,4 +1,4 @@
-package com.statemachine.service;
+package com.statemachine.demo.service;
 
 import org.springframework.statemachine.StateMachine;
 

@@ -1,4 +1,4 @@
-package com.statemachine.service.impl;
+package com.statemachine.demo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.Message;
@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 
 import com.statemachine.demo.dao.ProductRepository;
 import com.statemachine.demo.model.Product;
+import com.statemachine.demo.service.ProductService;
 import com.statemachine.demo.util.Events;
 import com.statemachine.demo.util.States;
-import com.statemachine.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService {

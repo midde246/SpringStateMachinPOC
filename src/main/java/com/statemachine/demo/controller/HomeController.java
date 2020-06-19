@@ -6,16 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.statemachine.demo.dao.ProductServiceDAO;
+import com.statemachine.demo.dao.impl.ProductServiceDAOImpl;
 import com.statemachine.demo.model.Product;
-import com.statemachine.demo.util.States;
-import com.statemachine.service.ProductService;
+import com.statemachine.demo.service.ProductService;
 
 @RestController
 public class HomeController {
 	
 	@Autowired
-	ProductServiceDAO produtServiceDao;
+	ProductServiceDAOImpl produtServiceDao;
 	
 	@Autowired
 	ProductService productService;
